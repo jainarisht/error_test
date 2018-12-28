@@ -84,7 +84,7 @@ func (t *SimpleAsset) sleep(stub shim.ChaincodeStubInterface, args []string) pee
 		return resp
 	}
 
-	time.Sleep(time.Duration(sleepTime) * time.Second)
+	// time.Sleep(time.Duration(sleepTime) * time.Second)
 	return shim.Success([]byte("Sleep done"))
 }
 
